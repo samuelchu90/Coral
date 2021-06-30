@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mapping the Coral Reefs</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class = "loginheader">
+      <nav>
+        <a href="index.html"><img src="coral_logo2.png"></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="login_signup.html">CONTRIBUTE</a></li>
+            <li><a href="map.html">MAP</a></li>
+          </ul>
+        </div>  
+      </nav>
+      <div class="formstructure">
+        <form>
+          <input type="text" name="username" id="username-field" class="form-field" placeholder="Enter Username"><br>
+          <input type="text" name="password" id="password-field"
+          class="form-field" placeholder="Enter Password"><br>
+          <button onclick="signup();return false">Sign Up</button>
+          <button onclick="login();return false">Login</button>
+          <!-- <input type="submit" value="Login" class="submit-field" id="login-in-submit"> -->
+        </form>
+        <h3 id="status-message"></h3>
+      </div>
+
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parse/3.1.0/parse.min.js"></script>
+  </body>
+</html>

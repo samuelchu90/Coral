@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Asap', sans-serif;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(153, 161, 223, 0.7), rgba(153, 161, 223, 0.7)), url(coralreef1.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+.loginheader{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(153, 161, 223, 0.7), rgba(153, 161, 223, 0.7)), url(coral2.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color:#fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+/* red underline */
+.nav-links ul li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #070861;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.text-box{
+  margin: auto;
+  text-align: center;
+}
+.upload{
+  margin-top: 35px;
+  margin-left: 120px;
+}
+.upload h1{
+  font-size: 36px;
+}
+.text-box h1{
+  font-size: 40px;
+}
+.text-box h3{
+  margin: 5px 0 20px;
+  font-size: 30px;
+}
+.text-box p{
+  margin: 25px 0 20px;
+  font-size: 16px;
+}
+.text-box a{
+  color: black;
+  font-size: 30px;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+
+}
+.hero-btn:hover{
+  border: 1px solid #6b7fdb;
+  background: #6b7fdb;
+  transition: 0.8s;
+}
+.formstructure{
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 100px 100px 100px;
+}
+
+.form-field{
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 7px 7px;
+}
+.form-field-f{
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none; 
+}
+#map{
+  height: 400px;
+  width: 100%;
+}
+

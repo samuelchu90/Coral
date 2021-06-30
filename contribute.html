@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mapping the Coral Reefs</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class = "loginheader">
+      <nav>
+        <a href="index.html"><img src="coral_logo2.png"></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contribute.html">CONTRIBUTE</a></li>
+            <li><a href="map.html">MAP</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="upload">
+        <h1>Upload a Picture</h1>
+        <input type="file" class="form-field-f" accept="image/gif, image/jpeg, image/png" id="file" onchange="loadFile(); return false">
+        <p><img id="output" width="300"/></p>
+        <h3 id="image-results"></h3>
+        <h1>Location</h1>
+        <input type="text" name="latitude" id="lat-field" placeholder="Enter Latitude" class="form-field"><br>
+        <input type="text" name="longitude" id="long-field" placeholder="Enter Longitude" class="form-field"><br><br>
+        <button onclick="submitLocation();return false">Submit</button> 
+         <!--<input type="submit" id="form-submit" onclick="submitLocation();return false"><br> -->
+        <p id="test-text"></p>
+      </div>
+      
+      
+      
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src='parse/dist/parse.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parse/3.1.0/parse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+  </body>
+</html>
